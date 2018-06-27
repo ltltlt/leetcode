@@ -1,5 +1,7 @@
-// beats 10% golang submissions
-// too long, a little complicate
+// Beats 10% golang submissions
+// Too long, a little complicate
+// Note that this code is not strictness,
+// i don't consider rune which contains more than 1 byte
 
 // example: "aba"
 // start from ab, ba and aba, then expand

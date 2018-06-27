@@ -1,5 +1,7 @@
-// pass, beat 100% go submissions
-// this problem is easy, just find some patterns first
+// Pass, beat 100% go submissions
+// This problem is easy, just find some patterns first
+// Note that this code is not strictness,
+// i don't consider rune which contains more than 1 byte
 package main
 
 import (
