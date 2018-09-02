@@ -1,0 +1,31 @@
+result_list = set()
+nums.sort()
+s = set(nums)                   # this little optimize cause this code make through
+for i, num in enumerate(nums):
+	if num in s:
+		s.remove(num)
+		target = -num
+		j, k = 0, len(nums)-1
+		igtj = kgti = True
+		while j < k:
+			if j == i:
+				j += 1
+				igtj = False
+			elif k == i:
+				k -= 1
+				kgti = False
+			else:
+				value = nums[j] + nums[k]
+				if value == target:
+					if igtj:
+						if kgti:
+							result_list.add((nums[j], num, nums[k]))
+						else: result_list.add((nums[j], nums[k], num))
+					else:
+						if kgti:
+							result_list.add((num, nums[j], nums[k]))
+					j, k = j+1, k-1
+				elif value < target:
+					j += 1
+				else: k -= 1
+return list(result_list)
