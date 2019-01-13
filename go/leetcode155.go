@@ -50,17 +50,3 @@ func (this *MinStack) Top() int {
 func (this *MinStack) GetMin() int {
 	return this.min
 }
-
-func main() {
-	stack := Constructor()
-	stack.Push(5)
-	stack.Push(3)
-	stack.Push(10)
-	fmt.Println(stack.Top())
-	fmt.Println(stack.GetMin())
-	stack.Pop()
-	fmt.Println(stack.GetMin())
-	fmt.Println(stack.Top())
-	stack.Pop()
-	fmt.Println(stack.GetMin(), stack.Top())
-}

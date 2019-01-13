@@ -100,7 +100,3 @@ func multiply(num1 string, num2 string) string {
 	numbers := mulEach(num1, num2)
 	return sumUp(numbers)
 }
-
-func main() {
-	fmt.Println(multiply("123", "456"))
-}

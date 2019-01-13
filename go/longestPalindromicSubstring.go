@@ -89,7 +89,3 @@ func longestPalindrome(s string) string {
 		return string(s[0])
 	}
 }
-
-func main() {
-	fmt.Println(longestPalindrome("aaaa"))
-}

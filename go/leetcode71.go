@@ -42,10 +42,3 @@ Loop:
 	}
 	return newPath
 }
-
-func main() {
-	fmt.Println(simplifyPath("/a/b/.."))
-	fmt.Println(simplifyPath("/a//./b/../../c/"))
-	fmt.Println(simplifyPath("/../"))
-	fmt.Println(simplifyPath("//"))
-}

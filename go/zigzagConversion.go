@@ -39,7 +39,3 @@ func convert(s string, numRows int) string {
 	}
 	return buffer.String()
 }
-
-func main() {
-	fmt.Println(convert("AB", 2))
-}

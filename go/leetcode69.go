@@ -13,7 +13,3 @@ func mySqrt(x int) int {
 	}
 	return int(next)
 }
-
-func main() {
-	fmt.Println(mySqrt(16))
-}

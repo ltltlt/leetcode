@@ -45,28 +45,3 @@ func partition(head *ListNode, x int) *ListNode {
 	}
 	return head
 }
-
-func main() {
-	l := &ListNode{
-		Val: 1,
-		Next: &ListNode{
-			Val: 4,
-			Next: &ListNode{
-				Val: 3,
-				Next: &ListNode{
-					Val: 2,
-					Next: &ListNode{
-						Val: 5,
-						Next: &ListNode{
-							Val: 2,
-						},
-					},
-				},
-			},
-		},
-	}
-	l = partition(l, 3)
-	for cur := l; cur != nil; cur = cur.Next {
-		fmt.Println(cur.Val)
-	}
-}

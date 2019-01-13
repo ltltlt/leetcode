@@ -29,28 +29,3 @@ func rotateRight(head *ListNode, k int) *ListNode {
 	prev.Next = nil
 	return cur
 }
-
-func main() {
-	head := &ListNode{
-		Val: 1,
-		Next: &ListNode{
-			Val: 2,
-			Next: &ListNode{
-				Val: 3,
-				Next: &ListNode{
-					Val: 4,
-					Next: &ListNode{
-						Val: 5,
-					},
-				},
-			},
-		},
-	}
-	//head = &ListNode{
-	//Val: 1,
-	//}
-	head = rotateRight(head, 2)
-	for ; head != nil; head = head.Next {
-		fmt.Println(head.Val)
-	}
-}

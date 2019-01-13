@@ -11,10 +11,3 @@ func lengthOfLastWord(s string) int {
 	}
 	return length - i - 1
 }
-
-func main() {
-	fmt.Println(lengthOfLastWord("123 345"))
-	fmt.Println(lengthOfLastWord("1"))
-	fmt.Println(lengthOfLastWord(""))
-	fmt.Println(lengthOfLastWord("a "))
-}
