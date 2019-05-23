@@ -1,0 +1,3 @@
+[submodule "leetcode-go"]
+	path = leetcode-go
+	url = git@github.com:ltltlt/leetcode-go.git
